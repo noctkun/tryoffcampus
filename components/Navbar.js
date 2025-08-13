@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Shield } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import AuthButton from './AuthButton';
 
@@ -41,6 +41,14 @@ export default function Navbar({ user }) {
               </Link>
             )}
             
+            <button
+              onClick={() => router.push('/admin-auth')}
+              className="text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors border border-transparent dark:hover:border-primary-500 flex items-center"
+            >
+              <Shield className="h-4 w-4 mr-1" />
+              Admin
+            </button>
+            
             <ThemeToggle />
             <AuthButton user={user} />
           </div>
@@ -78,6 +86,19 @@ export default function Navbar({ user }) {
                   Dashboard
                 </Link>
               )}
+              
+              <button
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  router.push('/admin-auth');
+                }}
+                className="block w-full text-left text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 rounded-md text-base font-medium transition-colors"
+              >
+                <span className="flex items-center">
+                  <Shield className="h-4 w-4 mr-2" />
+                  Admin
+                </span>
+              </button>
               
               <div className="pt-2">
                 <AuthButton user={user} />

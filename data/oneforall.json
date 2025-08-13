@@ -1,103 +1,152 @@
 [
-  {
-    "name": "TechCorp",
-    "Role": "Frontend Developer",
-    "Location": "Bangalore",
-    "TimeStamp": "2024-01-15T10:30:00Z",
-    "Applylink": "https://techcorp.com/apply/frontend-dev",
-    "Aboutlink": "https://techcorp.com/jobs/frontend-dev-details",
-    "YearsOfExperience": 2,
-    "salary": "₹8-12 LPA"
-  },
-  {
-    "name": "TechCorp",
-    "Role": "Backend Developer",
-    "Location": "Bangalore",
-    "TimeStamp": "2024-01-14T09:15:00Z",
-    "Applylink": "https://techcorp.com/apply/backend-dev",
-    "Aboutlink": "https://techcorp.com/jobs/backend-dev-details",
-    "YearsOfExperience": 3,
-    "salary": "₹12-18 LPA"
-  },
-  {
-    "name": "DataSystems",
-    "Role": "Data Scientist",
-    "Location": "Mumbai",
-    "TimeStamp": "2024-01-14T14:20:00Z",
-    "Applylink": "https://datasystems.com/careers/data-scientist",
-    "Aboutlink": "https://datasystems.com/job-info/data-scientist",
-    "YearsOfExperience": 3,
-    "salary": "₹15-22 LPA"
-  },
-  {
-    "name": "DataSystems",
-    "Role": "Data Engineer",
-    "Location": "Mumbai",
-    "TimeStamp": "2024-01-13T11:45:00Z",
-    "Applylink": "https://datasystems.com/careers/data-engineer",
-    "Aboutlink": "https://datasystems.com/job-info/data-engineer",
-    "YearsOfExperience": 4,
-    "salary": "₹18-25 LPA"
-  },
-  {
-    "name": "CloudNinja",
-    "Role": "DevOps Engineer",
-    "Location": "Remote",
-    "TimeStamp": "2024-01-13T09:15:00Z",
-    "Applylink": "https://cloudninja.com/apply/devops",
-    "Aboutlink": "https://cloudninja.com/careers/devops-engineer",
-    "YearsOfExperience": 4,
-    "salary": "₹20-28 LPA"
-  },
-  {
-    "name": "CloudNinja",
-    "Role": "Cloud Architect",
-    "Location": "Remote",
-    "TimeStamp": "2024-01-12T16:30:00Z",
-    "Applylink": "https://cloudninja.com/apply/architect",
-    "Aboutlink": "https://cloudninja.com/careers/cloud-architect",
-    "YearsOfExperience": 6,
-    "salary": "₹35-45 LPA"
-  },
-  {
-    "name": "StartupHub",
-    "Role": "Product Manager",
-    "Location": "Hyderabad",
-    "TimeStamp": "2024-01-12T16:45:00Z",
-    "Applylink": "https://startuphub.com/jobs/pm",
-    "Aboutlink": "https://startuphub.com/careers/product-manager",
-    "YearsOfExperience": 5,
-    "salary": "₹25-35 LPA"
-  },
-  {
-    "name": "StartupHub",
-    "Role": "UX Researcher",
-    "Location": "Hyderabad",
-    "TimeStamp": "2024-01-11T13:20:00Z",
-    "Applylink": "https://startuphub.com/jobs/ux-researcher",
-    "Aboutlink": "https://startuphub.com/careers/ux-researcher",
-    "YearsOfExperience": 3,
-    "salary": "₹12-18 LPA"
-  },
-  {
-    "name": "DesignStudio",
-    "Role": "UI/UX Designer",
-    "Location": "Delhi",
-    "TimeStamp": "2024-01-11T11:30:00Z",
-    "Applylink": "https://designstudio.com/apply/designer",
-    "Aboutlink": "https://designstudio.com/careers/ui-ux-designer",
-    "YearsOfExperience": 2,
-    "salary": "₹8-15 LPA"
-  },
-  {
-    "name": "DesignStudio",
-    "Role": "Visual Designer",
-    "Location": "Delhi",
-    "TimeStamp": "2024-01-10T15:45:00Z",
-    "Applylink": "https://designstudio.com/apply/visual-designer",
-    "Aboutlink": "https://designstudio.com/careers/visual-designer",
-    "YearsOfExperience": 4,
-    "salary": "₹15-22 LPA"
-  }
-]
-  
+    {
+      "name": "CME Group",
+      "Role": "Network Operations Engineer I",
+      "Location": "Bangalore",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://cmegroup.wd1.myworkdayjobs.com/cme_careers/job/Bangalore---Bagmane-Tridib/Network-Operations-Engineer---I_32805-1",
+      "Aboutlink": "https://www.cmegroup.com",
+      "YearsOfExperience": "0-1",
+      "salary": "₹8-12 LPA (estimated)"
+    },
+    {
+      "name": "Renault Group",
+      "Role": "Engineer",
+      "Location": "Chennai",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://alliancewd.wd3.myworkdayjobs.com/renault-group-careers/job/Chennai/Engineer_JOBREQ_50216540-1",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/renault-reviews",
+      "YearsOfExperience": "0-1",
+      "salary": "₹5-10 LPA (estimated)"
+    },
+    {
+      "name": "Akamai Technologies",
+      "Role": "Software Engineer",
+      "Location": "Pan India",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://fa-extu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1173",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/akamai-technologies-reviews",
+      "YearsOfExperience": "0-1",
+      "salary": "₹12-20 LPA (estimated)"
+    },
+    {
+      "name": "Continental",
+      "Role": "Cloud DevOps Engineer",
+      "Location": "Pan India",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://jobs.continental.com/en/detail-page/job-detail/REF78543R-p-dcb716497124119e745c1850e30dedde/cloud-devops-engineer/",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/continental-automotive-components-india-reviews",
+      "YearsOfExperience": "0-1",
+      "salary": "₹10-16 LPA (estimated)"
+    },
+    {
+      "name": "Nbyula",
+      "Role": "Software Engineer",
+      "Location": "Bengaluru",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://nbyula.com/job/6287263478056e001b3ec1ae",
+      "Aboutlink": "https://nbyula.com",
+      "YearsOfExperience": "0-1",
+      "salary": "₹8-14 LPA (estimated)"
+    },
+    {
+      "name": "Siemens Energy",
+      "Role": "Mechanical Product Design Engineer",
+      "Location": "Ahmedabad",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://jobs.siemens-energy.com/en_US/Jobs/FolderDetail?folderId=276956",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/siemens-energy-reviews",
+      "YearsOfExperience": "0-10",
+      "salary": "₹6-14 LPA (estimated)"
+    },
+    {
+      "name": "Webkul",
+      "Role": "PHP Developer",
+      "Location": "Noida",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://webkul.com/jobs/php-developer/",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/webkul-software-reviews",
+      "YearsOfExperience": "0-3",
+      "salary": "₹4-8 LPA (estimated)"
+    },
+    {
+      "name": "Juspay",
+      "Role": "Software Development Engineer",
+      "Location": "Bengaluru",
+      "TimeStamp": "2025-08-13T19:37:00+05:30",
+      "Applylink": "https://juspay.io/careers/DEV-BE02",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/juspay-reviews",
+      "YearsOfExperience": "0-1",
+      "salary": "₹18-30 LPA (estimated)"
+    },
+    {
+      "name": "Virtusa",
+      "Role": "Associate (Core Tech - Java)",
+      "Location": "Hyderabad",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://www.virtusa.com/careers/in/hyderabad/core-tech-java/associate/creq228976?jobid=CREQ228976-1682787016&source=Indeed",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/virtusa-consulting-services-reviews",
+      "YearsOfExperience": "0-2",
+      "salary": "₹5-9 LPA (estimated)"
+    },
+    {
+      "name": "Kaleris",
+      "Role": "Associate AI Engineer",
+      "Location": "Chennai",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://kaleris.wd501.myworkdayjobs.com/kaleris_careers/job/Chennai/Associate-AI-Engineer_R-100305",
+      "Aboutlink": "https://www.kaleris.com",
+      "YearsOfExperience": "0-1",
+      "salary": "₹6-10 LPA (estimated)"
+    },
+    {
+      "name": "Accenture",
+      "Role": "Associate",
+      "Location": "India",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://www.accenture.com/in-en/careers/jobdetails?id=AIOC-S01597295_en",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/accenture-reviews",
+      "YearsOfExperience": "0-2",
+      "salary": "₹3.5-6.5 LPA (estimated)"
+    },
+    {
+      "name": "Western Digital",
+      "Role": "Software Engineer (Apps) – 2025 Pass-outs",
+      "Location": "India",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://jobs.smartrecruiters.com/WesternDigital/744000075205825-engineer-software-development-engineering-apps-be-b-tech-freshers-2025-pass-outs-",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/western-digital-reviews",
+      "YearsOfExperience": "0-2",
+      "salary": "₹10-18 LPA (estimated)"
+    },
+    {
+      "name": "Amber",
+      "Role": "SDE Intern",
+      "Location": "India",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://www.linkedin.com/jobs/view/4283118167/",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/amber-reviews",
+      "YearsOfExperience": "0-2",
+      "salary": "₹3-4 LPA"
+    },
+    {
+      "name": "Flipkart",
+      "Role": "Software Engineer",
+      "Location": "India",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://www.linkedin.com/jobs/view/4282735345/",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/flipkart-reviews",
+      "YearsOfExperience": "0-2",
+      "salary": "₹20-30 LPA"
+    },
+    {
+      "name": "EXL",
+      "Role": "Data Scientist",
+      "Location": "India (Remote)",
+      "TimeStamp": "2025-08-13T19:06:00+05:30",
+      "Applylink": "https://www.linkedin.com/jobs/view/4266437972",
+      "Aboutlink": "https://www.ambitionbox.com/reviews/exl-service-reviews",
+      "YearsOfExperience": "2",
+      "salary": "₹10-18 LPA (estimated)"
+    }
+  ]
