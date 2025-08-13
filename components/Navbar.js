@@ -11,6 +11,12 @@ export default function Navbar({ user }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Only show admin button on login page and when no user is signed in
+  const showAdminButton = !user && router.pathname === '/auth';
+  
+  // Hide auth button on admin pages
+  const showAuthButton = !router.pathname.startsWith('/admin');
+
   return (
     <nav className="bg-white dark:bg-black shadow-sm border-b border-gray-200 dark:border-primary-600 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,16 +47,18 @@ export default function Navbar({ user }) {
               </Link>
             )}
             
-            <button
-              onClick={() => router.push('/admin-auth')}
-              className="text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors border border-transparent dark:hover:border-primary-500 flex items-center"
-            >
-              <Shield className="h-4 w-4 mr-1" />
-              Admin
-            </button>
+            {showAdminButton && (
+              <button
+                onClick={() => router.push('/admin-auth')}
+                className="text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 rounded-md text-sm font-medium transition-colors border border-transparent dark:hover:border-primary-500 flex items-center"
+              >
+                <Shield className="h-4 w-4 mr-1" />
+                Admin
+              </button>
+            )}
             
             <ThemeToggle />
-            <AuthButton user={user} />
+            {showAuthButton && <AuthButton user={user} />}
           </div>
 
           {/* Mobile menu button */}
@@ -87,22 +95,26 @@ export default function Navbar({ user }) {
                 </Link>
               )}
               
-              <button
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  router.push('/admin-auth');
-                }}
-                className="block w-full text-left text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 rounded-md text-base font-medium transition-colors"
-              >
-                <span className="flex items-center">
-                  <Shield className="h-4 w-4 mr-2" />
-                  Admin
-                </span>
-              </button>
+              {showAdminButton && (
+                <button
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    router.push('/admin-auth');
+                  }}
+                  className="block w-full text-left text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 rounded-md text-base font-medium transition-colors"
+                >
+                  <span className="flex items-center">
+                    <Shield className="h-4 w-4 mr-2" />
+                    Admin
+                  </span>
+                </button>
+              )}
               
-              <div className="pt-2">
-                <AuthButton user={user} />
-              </div>
+              {showAuthButton && (
+                <div className="pt-2">
+                  <AuthButton user={user} />
+                </div>
+              )}
             </div>
           </div>
         )}
