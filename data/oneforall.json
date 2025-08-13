@@ -1,0 +1,103 @@
+[
+  {
+    "name": "TechCorp",
+    "Role": "Frontend Developer",
+    "Location": "Bangalore",
+    "TimeStamp": "2024-01-15T10:30:00Z",
+    "Applylink": "https://techcorp.com/apply/frontend-dev",
+    "Aboutlink": "https://techcorp.com/jobs/frontend-dev-details",
+    "YearsOfExperience": 2,
+    "salary": "₹8-12 LPA"
+  },
+  {
+    "name": "TechCorp",
+    "Role": "Backend Developer",
+    "Location": "Bangalore",
+    "TimeStamp": "2024-01-14T09:15:00Z",
+    "Applylink": "https://techcorp.com/apply/backend-dev",
+    "Aboutlink": "https://techcorp.com/jobs/backend-dev-details",
+    "YearsOfExperience": 3,
+    "salary": "₹12-18 LPA"
+  },
+  {
+    "name": "DataSystems",
+    "Role": "Data Scientist",
+    "Location": "Mumbai",
+    "TimeStamp": "2024-01-14T14:20:00Z",
+    "Applylink": "https://datasystems.com/careers/data-scientist",
+    "Aboutlink": "https://datasystems.com/job-info/data-scientist",
+    "YearsOfExperience": 3,
+    "salary": "₹15-22 LPA"
+  },
+  {
+    "name": "DataSystems",
+    "Role": "Data Engineer",
+    "Location": "Mumbai",
+    "TimeStamp": "2024-01-13T11:45:00Z",
+    "Applylink": "https://datasystems.com/careers/data-engineer",
+    "Aboutlink": "https://datasystems.com/job-info/data-engineer",
+    "YearsOfExperience": 4,
+    "salary": "₹18-25 LPA"
+  },
+  {
+    "name": "CloudNinja",
+    "Role": "DevOps Engineer",
+    "Location": "Remote",
+    "TimeStamp": "2024-01-13T09:15:00Z",
+    "Applylink": "https://cloudninja.com/apply/devops",
+    "Aboutlink": "https://cloudninja.com/careers/devops-engineer",
+    "YearsOfExperience": 4,
+    "salary": "₹20-28 LPA"
+  },
+  {
+    "name": "CloudNinja",
+    "Role": "Cloud Architect",
+    "Location": "Remote",
+    "TimeStamp": "2024-01-12T16:30:00Z",
+    "Applylink": "https://cloudninja.com/apply/architect",
+    "Aboutlink": "https://cloudninja.com/careers/cloud-architect",
+    "YearsOfExperience": 6,
+    "salary": "₹35-45 LPA"
+  },
+  {
+    "name": "StartupHub",
+    "Role": "Product Manager",
+    "Location": "Hyderabad",
+    "TimeStamp": "2024-01-12T16:45:00Z",
+    "Applylink": "https://startuphub.com/jobs/pm",
+    "Aboutlink": "https://startuphub.com/careers/product-manager",
+    "YearsOfExperience": 5,
+    "salary": "₹25-35 LPA"
+  },
+  {
+    "name": "StartupHub",
+    "Role": "UX Researcher",
+    "Location": "Hyderabad",
+    "TimeStamp": "2024-01-11T13:20:00Z",
+    "Applylink": "https://startuphub.com/jobs/ux-researcher",
+    "Aboutlink": "https://startuphub.com/careers/ux-researcher",
+    "YearsOfExperience": 3,
+    "salary": "₹12-18 LPA"
+  },
+  {
+    "name": "DesignStudio",
+    "Role": "UI/UX Designer",
+    "Location": "Delhi",
+    "TimeStamp": "2024-01-11T11:30:00Z",
+    "Applylink": "https://designstudio.com/apply/designer",
+    "Aboutlink": "https://designstudio.com/careers/ui-ux-designer",
+    "YearsOfExperience": 2,
+    "salary": "₹8-15 LPA"
+  },
+  {
+    "name": "DesignStudio",
+    "Role": "Visual Designer",
+    "Location": "Delhi",
+    "TimeStamp": "2024-01-10T15:45:00Z",
+    "Applylink": "https://designstudio.com/apply/visual-designer",
+    "Aboutlink": "https://designstudio.com/careers/visual-designer",
+    "YearsOfExperience": 4,
+    "salary": "₹15-22 LPA"
+  }
+]
+  
