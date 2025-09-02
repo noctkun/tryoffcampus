@@ -13,7 +13,7 @@ export default function AuthButton({ user }) {
     return (
       <button
         onClick={handleSignOut}
-        className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 border border-primary-500 hover:border-primary-400 shadow-lg"
+        className="bg-black hover:bg-gray-900 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 border border-black hover:border-gray-900 shadow-lg"
       >
         Sign Out
       </button>
@@ -23,7 +23,7 @@ export default function AuthButton({ user }) {
   return (
     <button
       onClick={() => router.push('/auth')}
-      className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 border border-primary-500 hover:border-primary-400 shadow-lg"
+      className="bg-black hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-200 text-white px-4 py-2 rounded-lg font-medium transition-all duration-200 border border-black dark:border-white hover:border-gray-900 shadow-lg"
     >
       Sign In
     </button>

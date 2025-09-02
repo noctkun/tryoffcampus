@@ -107,18 +107,18 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Building className="h-8 w-8 text-primary-600 mr-3" />
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+              <Building className="h-8 w-8 text-black dark:text-white mr-3" />
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white"> 
                 Admin Dashboard
               </h1>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-sm text-gray-600 dark:text-white">
                 Welcome, {adminId}
               </span>
               <button
                 onClick={handleLogout}
-                className="flex items-center text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+                className="flex items-center text-gray-600 dark:text-white hover:text-red-600 dark:hover:text-red-400 transition-colors"
               >
                 <LogOut className="h-5 w-5 mr-2" />
                 Logout
@@ -132,10 +132,10 @@ export default function AdminDashboard() {
       <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 sm:p-8">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
               Add New Job
             </h2>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600 dark:text-white">
               Fill in the details below to add a new job posting
             </p>
           </div>
@@ -143,8 +143,8 @@ export default function AdminDashboard() {
           {message && (
             <div className={`mb-6 p-4 rounded-md ${
               messageType === 'success' 
-                ? 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400' 
-                : 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400'
+                ? 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-white' 
+                : 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-white'
             }`}>
               {message}
             </div>
@@ -154,7 +154,7 @@ export default function AdminDashboard() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Company Name */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                   Company Name *
                 </label>
                 <input
@@ -170,7 +170,7 @@ export default function AdminDashboard() {
 
               {/* Role */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                   Job Role *
                 </label>
                 <input
@@ -186,7 +186,7 @@ export default function AdminDashboard() {
 
               {/* Location */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                   Location *
                 </label>
                 <input
@@ -202,7 +202,7 @@ export default function AdminDashboard() {
 
               {/* Years of Experience */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                   Years of Experience *
                 </label>
                 <input
@@ -219,7 +219,7 @@ export default function AdminDashboard() {
 
               {/* Salary */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                   Salary *
                 </label>
                 <input
@@ -235,7 +235,7 @@ export default function AdminDashboard() {
 
               {/* Timestamp */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-white mb-2">
                   Posted Date *
                 </label>
                 <input
@@ -285,7 +285,7 @@ export default function AdminDashboard() {
             <div className="pt-4">
               <button
                 type="submit"
-                className="btn-primary w-full flex justify-center items-center"
+                className="btn-primary w-full flex justify-center items-center dark:bg-white dark:text-black dark:border-white dark:hover:bg-gray-200"
               >
                 <Plus className="h-5 w-5 mr-2" />
                 Add Job

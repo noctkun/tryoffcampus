@@ -25,7 +25,7 @@ export default function JobCard({ companyName, jobData, user }) {
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center min-w-0 flex-1">
           <div className="min-w-0 flex-1">
-            <h3 className="text-lg sm:text-xl font-bold text-primary-600 dark:text-primary-400 truncate">
+            <h3 className="text-lg sm:text-xl font-bold text-black dark:text-white truncate">
               {companyName}
             </h3>
             {jobData.TimeStamp && (
@@ -62,7 +62,7 @@ export default function JobCard({ companyName, jobData, user }) {
         <button
           onClick={() => handleLinkClick('apply', jobData.Applylink)}
           disabled={!jobData.Applylink}
-          className="flex-1 bg-primary-600 hover:bg-primary-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2.5 sm:py-2 px-4 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
+          className="flex-1 bg-black hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-200 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-2.5 sm:py-2 px-4 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
         >
           Apply
         </button>

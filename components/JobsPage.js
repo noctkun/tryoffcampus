@@ -68,7 +68,7 @@ export default function JobsPage({ user }) {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
-        <div className="text-lg text-primary-400 text-center">Loading amazing opportunities...</div>
+        <div className="text-lg text-black dark:text-white text-center">Loading amazing opportunities...</div>
       </div>
     );
   }
@@ -95,10 +95,10 @@ export default function JobsPage({ user }) {
     <div className="min-h-screen py-6 sm:py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-3 sm:mb-4">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
             Job Opportunities 🚀
           </h1>
-          <p className="text-base sm:text-lg text-gray-600 dark:text-primary-200">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-white">
             Fresh opportunities updated daily. Your next career move is just a click away!
           </p>
         </div>
@@ -132,17 +132,17 @@ export default function JobsPage({ user }) {
         {/* Job Results */}
         {sortedJobs.length === 0 ? (
           <div className="text-center py-8 sm:py-12 px-4">
-            <h3 className="text-lg sm:text-xl font-medium text-gray-900 dark:text-gray-100 mb-2">
+            <h3 className="text-lg sm:text-xl font-medium text-gray-900 dark:text-white mb-2">
               No jobs found
             </h3>
-            <p className="text-sm sm:text-base text-gray-600 dark:text-primary-300">
+            <p className="text-sm sm:text-base text-gray-600 dark:text-white">
               Try adjusting your search criteria or check back later!
             </p>
           </div>
         ) : (
           <>
             <div className="mb-4 sm:mb-6">
-              <p className="text-sm sm:text-base text-gray-600 dark:text-primary-300">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-white">
                 Found {sortedJobs.length} job{sortedJobs.length !== 1 ? 's' : ''}
               </p>
             </div>
@@ -176,7 +176,7 @@ export default function JobsPage({ user }) {
                       <button
                         key={pageNum}
                         onClick={() => goToPage(pageNum)}
-                        className={`${isActive ? 'bg-primary-600 text-white' : 'btn-secondary'} px-3 py-2 rounded-md text-sm`}
+                        className={`${isActive ? 'bg-black text-white hover:bg-gray-900 dark:bg-white dark:text-black dark:hover:bg-gray-200' : 'btn-secondary'} px-3 py-2 rounded-md text-sm`}
                       >
                         {pageNum}
                       </button>

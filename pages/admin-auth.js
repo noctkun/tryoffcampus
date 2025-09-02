@@ -44,13 +44,13 @@ export default function AdminAuth() {
     <div className="min-h-screen bg-gray-50 dark:bg-black flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div className="text-center">
-          <div className="mx-auto h-16 w-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
-            <Shield className="h-8 w-8 text-primary-600" />
+          <div className="mx-auto h-16 w-16 bg-gray-100 dark:bg-gray-900 rounded-full flex items-center justify-center">
+            <Shield className="h-8 w-8 text-black dark:text-white" />
           </div>
-          <h2 className="mt-6 text-3xl font-extrabold text-gray-900 dark:text-gray-100">
+          <h2 className="mt-6 text-3xl font-extrabold text-gray-900 dark:text-white">
             Admin Access
           </h2>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-2 text-sm text-gray-600 dark:text-white">
             Enter your admin credentials to continue
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function AdminAuth() {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="space-y-4">
             <div>
-              <label htmlFor="adminId" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="adminId" className="block text-sm font-medium text-gray-700 dark:text-white">
                 Admin ID
               </label>
               <div className="mt-1 relative">
@@ -79,7 +79,7 @@ export default function AdminAuth() {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-white">
                 Password
               </label>
               <div className="mt-1 relative">
@@ -101,7 +101,7 @@ export default function AdminAuth() {
           </div>
 
           {error && (
-            <div className="text-red-600 dark:text-red-400 text-sm text-center bg-red-50 dark:bg-red-900/20 p-3 rounded-md">
+            <div className="text-red-600 dark:text-white text-sm text-center bg-red-50 dark:bg-red-900/20 p-3 rounded-md">
               {error}
             </div>
           )}
@@ -110,7 +110,7 @@ export default function AdminAuth() {
             <button
               type="submit"
               disabled={loading}
-              className="btn-primary w-full flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn-primary w-full flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed dark:bg-white dark:text-black dark:border-white dark:hover:bg-gray-200"
             >
               {loading ? 'Signing in...' : 'Sign In'}
             </button>
@@ -120,7 +120,7 @@ export default function AdminAuth() {
             <button
               type="button"
               onClick={() => router.push('/')}
-              className="text-primary-600 hover:text-primary-500 text-sm font-medium"
+              className="text-black hover:text-gray-900 dark:text-white dark:hover:text-gray-200 text-sm font-medium"
             >
               ← Back to Home
             </button>
