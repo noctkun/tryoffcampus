@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Briefcase, Coffee, AlertCircle } from 'lucide-react';
+import { Briefcase, Coffee, AlertCircle, Filter as FilterIcon, Bookmark, Bell, Sparkles, Users } from 'lucide-react';
 
 export default function LandingPage({ user }) {
   const router = useRouter();
@@ -62,42 +62,75 @@ export default function LandingPage({ user }) {
       </div>
 
       {/* Features Section */}
-      <div className="bg-gray-100 dark:bg-gray-950 py-16 sm:py-20 border-t dark:border-primary-600">
+      <div className="bg-gray-100 dark:bg-gray-950 py-16 sm:py-20 border-t dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Why Choose tryoffcampus?
+              Everything you need to land your next job
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-white px-4">
-              Because misery loves company, and we're all in this together! 😅
+              Powerful tools, clean UI, and zero fluff. Built for speed and sanity.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="card text-center">
-              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+              <FilterIcon className="h-8 w-8 mx-auto mb-3 text-black dark:text-white" />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Smart Filters & Search
+              </h3>
+              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
+                Find roles by company, title, and location with precision.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <Bookmark className="h-8 w-8 mx-auto mb-3 text-black dark:text-white" />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Save Jobs to History
+              </h3>
+              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
+                Keep track of what you’ve viewed and applied to.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <Bell className="h-8 w-8 mx-auto mb-3 text-black dark:text-white" />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Instant Job Alerts
+              </h3>
+              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
+                Opt in to get notified when fresh roles are posted.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <Sparkles className="h-8 w-8 mx-auto mb-3 text-black dark:text-white" />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Resume Tips & Keywords
+              </h3>
+              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
+                Simple, practical pointers to stand out in scans.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <Users className="h-8 w-8 mx-auto mb-3 text-black dark:text-white" />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+                Community Insights
+              </h3>
+              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
+                Curated tips and learnings from fellow job seekers.
+              </p>
+            </div>
+
+            <div className="card text-center">
+              <Briefcase className="h-8 w-8 mx-auto mb-3 text-black dark:text-white" />
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
                 Fresh Job Updates
               </h3>
               <p className="text-gray-600 dark:text-white text-sm sm:text-base">
-                Updated daily, unlike your motivation to apply to jobs.
-              </p>
-            </div>
-            
-            <div className="card text-center">
-              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900 dark:text-white">
-                Application History
-              </h3>
-              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
-                Track your rejections... I mean, track your progress!
-              </p>
-            </div>
-            
-            <div className="card text-center md:col-span-2 lg:col-span-1">
-              <h3 className="text-lg sm:text-xl font-semibold mb-4 text-gray-900 dark:text-white">
-                Dark Mode Support
-              </h3>
-              <p className="text-gray-600 dark:text-white text-sm sm:text-base">
-                For when you're job hunting at 3 AM (again).
+                Updated frequently to keep your search moving.
               </p>
             </div>
           </div>
