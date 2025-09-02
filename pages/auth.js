@@ -51,12 +51,12 @@ export default function Auth() {
   return (
     <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
-        <div className="bg-white dark:bg-black p-8 rounded-xl shadow-2xl border border-gray-200 dark:border-primary-500">
+        <div className="bg-white dark:bg-black p-8 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100">
+            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white">
               {isSignUp ? 'Create your account' : 'Sign in to your account'}
             </h2>
-            <p className="mt-2 text-sm text-gray-600 dark:text-primary-300">
+            <p className="mt-2 text-sm text-gray-600 dark:text-white">
               Join the off-campus job hunt revolution!
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function Auth() {
               <button
                 type="submit"
                 disabled={loading}
-                className="btn-primary w-full justify-center"
+                className="btn-primary w-full justify-center dark:bg-white dark:text-black dark:border-white dark:hover:bg-gray-200"
               >
                 {loading ? 'Processing...' : (isSignUp ? 'Sign up' : 'Sign in')}
               </button>
@@ -114,7 +114,7 @@ export default function Auth() {
             <div className="text-center">
               <button
                 type="button"
-                className="text-primary-600 hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300"
+                className="text-black hover:text-gray-900 dark:text-white dark:hover:text-gray-200"
                 onClick={() => setIsSignUp(!isSignUp)}
               >
                 {isSignUp ? 'Already have an account? Sign in' : 'Need an account? Sign up'}
