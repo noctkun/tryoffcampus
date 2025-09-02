@@ -21,7 +21,8 @@ export default function JobCard({ companyName, jobData, user }) {
   };
 
   return (
-    <div className="card card-glow hover:shadow-xl transition-all duration-300">
+    <div className="card card-glow hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+      {/* Header Section */}
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center min-w-0 flex-1">
           <div className="min-w-0 flex-1">
@@ -38,27 +39,39 @@ export default function JobCard({ companyName, jobData, user }) {
         </div>
       </div>
 
-      <div className="space-y-2 mb-4 sm:mb-6">
-        <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
-          {jobData.Role}
-        </h4>
-        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 flex items-center">
-          <MapPin size={14} className="mr-2 flex-shrink-0" />
-          <span className="truncate">{jobData.Location}</span>
-        </p>
-        {typeof jobData.YearsOfExperience !== 'undefined' && (
-          <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
-            Experience: <span className="font-medium">{jobData.YearsOfExperience} year{jobData.YearsOfExperience === 1 ? '' : 's'}</span>
+      {/* Content Section - This will grow to fill available space */}
+      <div className="flex-grow mb-4 sm:mb-6">
+        <div className="space-y-2">
+          <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+            {jobData.Role}
+          </h4>
+          <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 flex items-center">
+            <MapPin size={14} className="mr-2 flex-shrink-0" />
+            <span className="truncate">{jobData.Location}</span>
           </p>
-        )}
-        {jobData.salary && (
-          <p className="text-sm sm:text-base text-green-700 dark:text-green-400 font-medium">
-            💰 {jobData.salary}
-          </p>
-        )}
+          
+          {/* Experience Section - Always allocate space */}
+          <div className="min-h-[1.5rem]">
+            {typeof jobData.YearsOfExperience !== 'undefined' && (
+              <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
+                Experience: <span className="font-medium">{jobData.YearsOfExperience} year{jobData.YearsOfExperience === 1 ? '' : 's'}</span>
+              </p>
+            )}
+          </div>
+          
+          {/* Salary Section - Always allocate space */}
+          <div className="min-h-[1.5rem]">
+            {jobData.salary && (
+              <p className="text-sm sm:text-base text-green-700 dark:text-green-400 font-medium">
+                💰 {jobData.salary}
+              </p>
+            )}
+          </div>
+        </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+      {/* Button Section - Always at bottom */}
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-auto">
         <button
           onClick={() => handleLinkClick('apply', jobData.Applylink)}
           disabled={!jobData.Applylink}
